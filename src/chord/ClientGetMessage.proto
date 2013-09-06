@@ -1,0 +1,9 @@
+
+package chord;
+option java_package = "chord";
+
+
+message ClientGetMsg{
+	required string key = 1;
+}
+

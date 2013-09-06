@@ -1,0 +1,11 @@
+
+package chord;
+option java_package = "chord";
+
+
+message InitMsg{
+	required int32 myno = 1;
+	required string qname = 2;
+}
+
+

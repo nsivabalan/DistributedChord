@@ -1,0 +1,18 @@
+import "chord/InitMessage.proto";
+import "chord/InitAckMessage.proto";
+import "chord/ClientSetMessage.proto";
+import "chord/ClientGetMessage.proto";
+import "chord/ClientResponseMessage.proto";
+
+package chord;
+option java_package = "chord";
+
+message ChordMsg{
+	required string msgType = 1;
+	optional InitMsg initMsg = 2;
+	optional InitAckMsg initActMsg = 3;
+	optional ClientSetMsg clientSetMsg = 4;
+	optional ClientGetMsg clientGetMsg = 5;
+	optional ClientResponseMsg clientResponseMsg = 6;
+}
+
